@@ -1,9 +1,12 @@
+import Post from "./Post";
 
 const Feed = ({posts}) => {
     return (
-        <div>
-            
-        </div>
+        <>
+            {posts.map(post => (
+                <Post post={post} key={post.id}/>
+            ))}
+        </>
     )
 }
 
